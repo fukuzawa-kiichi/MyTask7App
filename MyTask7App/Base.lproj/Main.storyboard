@@ -18,6 +18,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWU-dc-TDK" userLabel="question3">
+                                <rect key="frame" x="0.0" y="64" width="320" height="404"/>
+                                <color key="backgroundColor" red="0.75913633579526851" green="0.98009654076971953" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">2016年のオリンピック開催地であるリオ・デ・ジャネイロで、ブラジル独立100周年を記念して作られたキリスト像が立つ場所として、正しいものはどれか。
+
+1. コパカバーナの山  
+2. コルコバードの丘</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CLs-FW-i0Z" userLabel="question2">
+                                <rect key="frame" x="0.0" y="64" width="320" height="404"/>
+                                <color key="backgroundColor" red="1" green="0.74091601582086208" blue="0.92520989052481173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">イタリア共和国の世界遺産『フィレンツェの歴史地区』のあるフィレンツェを中心に、17世紀に栄えた芸術運動は何でしょうか。
+
+1. シュルレアリスム 
+2. アバン ギャルド 
+3. ルネサンス</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fXs-Yh-S2r" userLabel="question1">
+                                <rect key="frame" x="0.0" y="64" width="320" height="404"/>
+                                <color key="backgroundColor" red="1" green="0.98691697207279294" blue="0.6735542385803357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">日本の世界遺産『富士山－信仰の対象と芸術の源泉』は、2013年に（ ）として世界遺産登録されました。 
+
+1. 文化遺産  
+2. 自然遺産  
+3. 山岳遺産  
+4. 伝統遺産</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="F0T-Di-ovf">
                                 <rect key="frame" x="0.0" y="468" width="320" height="100"/>
                                 <subviews>
@@ -71,102 +104,33 @@
                                     <constraint firstAttribute="height" constant="100" id="0ly-8W-hBg"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41r-8W-Nk3" userLabel="question3">
-                                <rect key="frame" x="0.0" y="64" width="320" height="404"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWU-dc-TDK">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="404"/>
-                                        <color key="backgroundColor" red="0.75913633579526851" green="0.98009654076971953" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <string key="text">2016年のオリンピック開催地であるリオ・デ・ジャネイロで、ブラジル独立100周年を記念して作られたキリスト像が立つ場所として、正しいものはどれか。
-
-1. コパカバーナの山  
-2. コルコバードの丘</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="0.097345180546924981" blue="0.9474453735354369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="cWU-dc-TDK" firstAttribute="leading" secondItem="41r-8W-Nk3" secondAttribute="leading" id="2Fx-fN-QzV"/>
-                                    <constraint firstAttribute="bottom" secondItem="cWU-dc-TDK" secondAttribute="bottom" id="CEN-2d-IhS"/>
-                                    <constraint firstAttribute="trailing" secondItem="cWU-dc-TDK" secondAttribute="trailing" id="cuN-g0-nGI"/>
-                                    <constraint firstItem="cWU-dc-TDK" firstAttribute="top" secondItem="41r-8W-Nk3" secondAttribute="top" id="wdt-qx-U4X"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNZ-db-JIi" userLabel="question2">
-                                <rect key="frame" x="0.0" y="64" width="320" height="404"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CLs-FW-i0Z">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="404"/>
-                                        <color key="backgroundColor" red="1" green="0.74091601582086208" blue="0.92520989052481173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <string key="text">イタリア共和国の世界遺産『フィレンツェの歴史地区』のあるフィレンツェを中心に、17世紀に栄えた芸術運動は何でしょうか。
-
-1. シュルレアリスム 
-2. アバン ギャルド 
-3. ルネサンス</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.034425814597112914" green="1" blue="0.72312888639007589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="CLs-FW-i0Z" secondAttribute="bottom" id="Gky-iR-ILC"/>
-                                    <constraint firstAttribute="trailing" secondItem="CLs-FW-i0Z" secondAttribute="trailing" id="VTa-BP-3AB"/>
-                                    <constraint firstItem="CLs-FW-i0Z" firstAttribute="leading" secondItem="iNZ-db-JIi" secondAttribute="leading" id="oKB-1p-128"/>
-                                    <constraint firstItem="CLs-FW-i0Z" firstAttribute="top" secondItem="iNZ-db-JIi" secondAttribute="top" id="sEM-MR-pC3"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="haK-7h-jdH" userLabel="question1">
-                                <rect key="frame" x="0.0" y="64" width="320" height="404"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fXs-Yh-S2r">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="404"/>
-                                        <color key="backgroundColor" red="1" green="0.98691697207279294" blue="0.6735542385803357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <string key="text">日本の世界遺産『富士山－信仰の対象と芸術の源泉』は、2013年に（ ）として世界遺産登録されました。 
-
-1. 文化遺産  
-2. 自然遺産  
-3. 山岳遺産  
-4. 伝統遺産</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.70122159064838263" green="1" blue="0.046521194155997869" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="fXs-Yh-S2r" firstAttribute="leading" secondItem="haK-7h-jdH" secondAttribute="leading" id="IeP-d4-7wK"/>
-                                    <constraint firstAttribute="trailing" secondItem="fXs-Yh-S2r" secondAttribute="trailing" id="Y2d-xB-zd2"/>
-                                    <constraint firstItem="fXs-Yh-S2r" firstAttribute="top" secondItem="haK-7h-jdH" secondAttribute="top" id="i1I-Pt-aSo"/>
-                                    <constraint firstAttribute="bottom" secondItem="fXs-Yh-S2r" secondAttribute="bottom" id="nDL-FO-mwW"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="haK-7h-jdH" firstAttribute="top" secondItem="41r-8W-Nk3" secondAttribute="top" id="5YP-Ve-SSE"/>
-                            <constraint firstItem="41r-8W-Nk3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5pJ-PX-h6n"/>
-                            <constraint firstItem="iNZ-db-JIi" firstAttribute="leading" secondItem="41r-8W-Nk3" secondAttribute="leading" id="AD6-NE-jGN"/>
-                            <constraint firstItem="F0T-Di-ovf" firstAttribute="top" secondItem="41r-8W-Nk3" secondAttribute="bottom" id="DKq-9u-5mO"/>
-                            <constraint firstItem="iNZ-db-JIi" firstAttribute="top" secondItem="41r-8W-Nk3" secondAttribute="top" id="FKH-Vu-Hvu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CLs-FW-i0Z" secondAttribute="trailing" id="16k-gr-dSE"/>
+                            <constraint firstItem="F0T-Di-ovf" firstAttribute="top" secondItem="cWU-dc-TDK" secondAttribute="bottom" id="HFL-OM-fEV"/>
+                            <constraint firstItem="CLs-FW-i0Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Hrz-rA-i3i"/>
+                            <constraint firstItem="F0T-Di-ovf" firstAttribute="top" secondItem="CLs-FW-i0Z" secondAttribute="bottom" id="IEo-Mb-xnV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F0T-Di-ovf" secondAttribute="trailing" id="IGi-Zn-ho3"/>
-                            <constraint firstItem="41r-8W-Nk3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JX7-NK-V2G"/>
                             <constraint firstItem="F0T-Di-ovf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KgZ-Er-KVB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="41r-8W-Nk3" secondAttribute="trailing" id="QaT-Rr-hmP"/>
-                            <constraint firstItem="haK-7h-jdH" firstAttribute="bottom" secondItem="41r-8W-Nk3" secondAttribute="bottom" id="SXG-hG-vsz"/>
-                            <constraint firstItem="haK-7h-jdH" firstAttribute="leading" secondItem="41r-8W-Nk3" secondAttribute="leading" id="XPn-Ka-aYc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cWU-dc-TDK" secondAttribute="trailing" id="L07-xX-pXP"/>
+                            <constraint firstItem="CLs-FW-i0Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lft-9f-Pve"/>
+                            <constraint firstItem="cWU-dc-TDK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="X0t-h3-g8G"/>
+                            <constraint firstItem="fXs-Yh-S2r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="atV-FO-H0z"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="F0T-Di-ovf" secondAttribute="bottom" id="b0p-AN-JYa"/>
-                            <constraint firstItem="haK-7h-jdH" firstAttribute="trailing" secondItem="41r-8W-Nk3" secondAttribute="trailing" id="eOP-BT-QDJ"/>
-                            <constraint firstItem="iNZ-db-JIi" firstAttribute="trailing" secondItem="41r-8W-Nk3" secondAttribute="trailing" id="ob1-Bs-6fX"/>
-                            <constraint firstItem="iNZ-db-JIi" firstAttribute="bottom" secondItem="41r-8W-Nk3" secondAttribute="bottom" id="xOE-Go-LUI"/>
+                            <constraint firstItem="F0T-Di-ovf" firstAttribute="top" secondItem="fXs-Yh-S2r" secondAttribute="bottom" id="dZ2-cZ-sdd"/>
+                            <constraint firstItem="cWU-dc-TDK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lMh-mi-Tem"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fXs-Yh-S2r" secondAttribute="trailing" id="s2N-3o-rh1"/>
+                            <constraint firstItem="fXs-Yh-S2r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ybJ-rh-mio"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="aWv-DA-XQN"/>
                     <connections>
                         <outlet property="nameOfQuestion" destination="aWv-DA-XQN" id="otV-iq-jvf"/>
-                        <outlet property="question1" destination="haK-7h-jdH" id="Q1Z-At-iYz"/>
-                        <outlet property="question2" destination="iNZ-db-JIi" id="tna-PV-kIZ"/>
-                        <outlet property="question3" destination="41r-8W-Nk3" id="QHv-3Q-nTE"/>
+                        <outlet property="question1" destination="fXs-Yh-S2r" id="7i1-GN-TjM"/>
+                        <outlet property="question2" destination="CLs-FW-i0Z" id="vah-Y3-x2Y"/>
+                        <outlet property="question3" destination="cWU-dc-TDK" id="viP-mj-BQ9"/>
                         <outlet property="stackView" destination="F0T-Di-ovf" id="EVH-gX-VZn"/>
                         <segue destination="DZ1-Yh-Mdw" kind="show" identifier="ToResultList" id="ndT-hx-DmI"/>
                     </connections>

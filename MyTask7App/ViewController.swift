@@ -11,9 +11,10 @@ import UIKit
 class ViewController: UIViewController {
     
     // 問題の表示部分
-    @IBOutlet weak var question1: UIView!
-    @IBOutlet weak var question2: UIView!
-    @IBOutlet weak var question3: UIView!
+    @IBOutlet weak var question1: UITextView!
+    @IBOutlet weak var question2: UITextView!
+    @IBOutlet weak var question3: UITextView!
+    
     @IBOutlet weak var nameOfQuestion: UINavigationItem!
     @IBOutlet weak var stackView: UIStackView!
     
@@ -35,13 +36,13 @@ class ViewController: UIViewController {
         questionList.append(question2)
         questionList.append(question3)
         // タイトルに問題番号を入れとく
-        nameOfQuestion.title = "第\(questionNum)問"
+        nameOfQuestion.title = "第\(questionNum + 1)問"
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         // タイトルに問題番号を入れとく
-        nameOfQuestion.title = "第\(questionNum)問"
+        nameOfQuestion.title = "第\(questionNum + 1)問"
     }
     
     // 正解をアラートを表示する
@@ -114,7 +115,7 @@ class ViewController: UIViewController {
         // 問題番号を増やす
         questionNum += 1
         // タイトルを変える
-        nameOfQuestion.title = "第\(questionNum)問"
+        nameOfQuestion.title = "第\(questionNum + 1)問"
     }
     
     
