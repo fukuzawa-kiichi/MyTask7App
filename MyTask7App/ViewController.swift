@@ -19,8 +19,6 @@ class ViewController: UIViewController {
     
     // 問題の配列
     var questionList: [UIView] = []
-    // 問題番号の配列
-    let questionName: [String] = ["第一問","第二問","第三問"]
     // 答えの配列
     let ans: [Int] = [1,3,2]
     // 現在のクイズの番号を管理する
@@ -37,13 +35,13 @@ class ViewController: UIViewController {
         questionList.append(question2)
         questionList.append(question3)
         // タイトルに問題番号を入れとく
-        nameOfQuestion.title = questionName[questionNum]
+        nameOfQuestion.title = "第\(questionNum)問"
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         // タイトルに問題番号を入れとく
-        nameOfQuestion.title = questionName[questionNum]
+        nameOfQuestion.title = "第\(questionNum)問"
     }
     
     // 正解をアラートを表示する
@@ -80,7 +78,7 @@ class ViewController: UIViewController {
     // 不正解をアラートを表示する
     func inCorrentAlert(){
         // アラートの作成
-        let alert = UIAlertController(title: "不正解!!", message: "もう一度挑戦しますか?", preferredStyle: .alert)
+        let alert = UIAlertController(title: "不正解!!", message: nil, preferredStyle: .alert)
         // 次へアラートのアクション(ボタン部分の定義)
         let close = UIAlertAction(title: "OK", style: .default) { (action: UIAlertAction) in
             if self.questionList.count - 1 > self.questionNum  {
@@ -116,7 +114,7 @@ class ViewController: UIViewController {
         // 問題番号を増やす
         questionNum += 1
         // タイトルを変える
-        nameOfQuestion.title = questionName[questionNum]
+        nameOfQuestion.title = "第\(questionNum)問"
     }
     
     
